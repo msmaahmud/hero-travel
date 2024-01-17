@@ -186,7 +186,81 @@ nav ul li a:hover{
 .popular-tour .content .btn-primary{
     margin-top: 32px;
  }
- 
+
+ /* Chose Destination */
+ .chose-destination{
+    text-align: center;
+ }
+ .chose-destination .section-title{
+    margin-bottom: 24px;;
+ }
+ .chose-destination .section-paragraph{
+    max-width: 640px;
+    margin: 0 auto;
+ }
+ .cs-item-container{
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    gap: 24px;
+ }
+ .cs-item-row{
+    display: grid;
+    gap: 24px;
+ }
+ .cs-item{
+    background-color: lightgray;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .cs-item a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+ }
+ .cs-item-row-1{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+ }
+ .cs-item-row-2{
+    grid-template-columns: 374px 474px 274px;
+    gap: 24px;
+
+ }
+ .cs-item-row-3{
+    grid-template-columns: 473px 673px;
+
+ }
+ .cs-items-1, .cs-items-2, .cs-items-3, .cs-items-4, .cs-items-5, .cs-items-6, .cs-items-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+ .cs-items-1{
+    background-image: url(../images/cs-1.jpg);
+ }
+ .cs-items-2{
+    background-image: url(../images/cs-2.jpg);
+ }
+ .cs-items-3{
+    background-image: url(../images/cs-3.jpg);
+ }
+ .cs-items-4{
+    background-image: url(../images/cs-4.jpg);
+ }
+ .cs-items-5{
+    background-image: url(../images/cs-5.jpg);
+ }
+ .cs-items-6{
+    background-image: url(../images/cs-6.jpg);
+ }
+ .cs-items-7{
+    background-image: url(../images/cs-7.jpg);
+ }
 
 /* Responsive Styles */
 
@@ -248,5 +322,27 @@ nav ul li a:hover{
     .popular-tour{
         flex-direction: column;
         gap: 30px;
+    }
+
+    /* Chose Destination */
+    .cs-item-container{
+        margin-top: 24px;
+        grid-template-rows: auto;
+    }
+    .cs-item a{
+        font-size: 1.25rem;    
+     }
+    .cs-item-row-1, .cs-item-row-2, .cs-item-row-3{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .cs-item-row-1{
+        grid-template-rows: 176px 176px;
+    }
+    .cs-item-row-2{
+        grid-template-rows: 176px 176px 176px;
+    }
+    .cs-item-row-3{
+        grid-template-rows: 176px 176px;
     }
 }
