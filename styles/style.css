@@ -28,7 +28,6 @@
 }
 .section-subtitle{
     color: var(--secondary-color);
-    text-align: center;
     font-family: Mulish;
     font-size: 24px;
     font-weight: 800;
@@ -262,6 +261,63 @@ nav ul li a:hover{
     background-image: url(../images/cs-7.jpg);
  }
 
+ /* Why Chose Us */
+ .wcs{
+    text-align: center;
+ }
+ .wcs .section-title{
+    margin-bottom: 24px;
+ }
+ .wcs .section-paragraph{
+    max-width: 640px;
+    margin: 0 auto;
+ }
+ .wcs-card-1{
+    grid-area: card-1;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+ }
+ .wcs-card-2{
+    grid-area: card-2;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+ }
+ .wcs-card-3{
+    grid-area: card-3;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    max-width: 574px;
+    margin: 0 auto;
+ }
+ .wcs-card-container{
+    margin-top: 48px;
+    display: grid;
+    grid-template-areas: 
+        "card-1 card-2"
+        "card-3 card-3"
+    ;
+    gap: 24px;
+ }
+.wcs-card{
+    border-radius: 16px;
+    padding: 32px;
+    text-align: left;
+}
+.wcs-card .section-subtitle{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.wcs-card .section-paragraph{
+    color: #5A5A5D;
+}
+.wcs-card img{
+    width: 64px;
+    height: 64px;
+}
+
 /* Responsive Styles */
 
 /* Mobile styles */
@@ -345,4 +401,22 @@ nav ul li a:hover{
     .cs-item-row-3{
         grid-template-rows: 176px 176px;
     }
+
+    /* Shy Chose Us */
+    .wcs .section-subtitle{
+        font-size: 1.25rem;
+    }
+    .wcs-card img{
+        width: 48px;
+        height: 48px;
+    }
+    .wcs-card-container{
+        margin-top: 24px;
+        grid-template-areas: 
+            "card-1"
+            "card-2"
+            "card-3"
+        ;
+        gap: 24px;
+     }
 }
