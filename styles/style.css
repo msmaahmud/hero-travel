@@ -41,11 +41,13 @@
     color: #FFF;
     text-align: center;
     font-size: 1.25em;
+    font-weight: 700;
     line-height: normal;
     border: 0;
     border-radius: 8px;
     background: #FF5400;
     padding: 14px 34px;
+    cursor: pointer;
 }
 
 /* NAV Styles */
@@ -68,11 +70,11 @@ nav .logo a img{
     width: 48px;
     height: auto;
 }
-nav .logo a h1{
+nav .logo a h3{
     font-size: 	2.25rem;
     font-weight: 800;
 }
-nav .logo a h1 span{
+nav .logo a h3 span{
     color: var(--primary-color);
 }
 nav ul{
@@ -88,6 +90,56 @@ nav ul li a:hover{
     color: var(--primary-color);
 }
 
+/* Banner Styles */
+.banner{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    text-align: center;
+}
+.banner .banner-bg-overlay{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    padding: 106px 185px;
+    border-radius: 16px;
+}
+.banner h1{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.banner p{
+    max-width: 676px;
+    margin: auto;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.banner form{
+    margin-top: 48px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.banner form input[type="text"], .banner form select{
+    background-color: #FFF;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px;
+    font-size: 1rem;
+    color: var(--paragraph-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
 /* Responsive Styles */
 
 /* Mobile styles */
@@ -101,7 +153,7 @@ nav ul li a:hover{
     nav .logo a img{
         width: 28px;
     }
-    nav .logo a h1{
+    nav .logo a h3{
         font-size: 	1.3rem;
     }
     nav{
