@@ -493,4 +493,7 @@ nav ul li a:hover{
         width: 147px;
         transform: rotate(-30deg);
      }
+     .newsletter-container .offer-badge h1{
+        font-size: 17px;
+     }
 }
