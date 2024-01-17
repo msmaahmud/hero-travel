@@ -29,7 +29,7 @@
 .section-subtitle{
     color: var(--secondary-color);
     font-family: Mulish;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: normal;
 }
@@ -318,6 +318,64 @@ nav ul li a:hover{
     height: 64px;
 }
 
+/* Newsletter */
+.newsletter-container{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   gap: 24px;
+}
+.newsletter-banner img{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+.newsletter-form{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+.newsletter-form h3{
+    margin-bottom: 16px;
+}
+.newsletter-form .section-paragraph{
+    margin-bottom: 24px;
+}
+.newsletter-form form{
+    border-top: 1px solid rgba(19, 19, 24, 0.10);    ;
+    padding-top: 24px;;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.newsletter-form form input[type="text"], .newsletter-form form input[type="email"]{
+    background: rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    border: 0;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 20px;
+}
+.newsletter-banner{
+    position: relative;
+}
+.newsletter-container .offer-badge{
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 26px 30px;
+    width: 276px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 67px;
+    transform: rotate(-26deg);
+    color: #FFFFFF;
+}
+
 /* Responsive Styles */
 
 /* Mobile styles */
@@ -329,6 +387,9 @@ nav ul li a:hover{
         margin-top: 40px;
     }
     .section-title{
+        font-size: 1.25rem;
+    }
+    .section-subtitle{
         font-size: 1.25rem;
     }
     .section-paragraph{
@@ -418,5 +479,18 @@ nav ul li a:hover{
             "card-3"
         ;
         gap: 16px;
+     }
+
+     /* Newsletter */
+     .newsletter-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+     }
+     .newsletter-container .offer-badge{
+        bottom: 36px;
+        right: 10px;
+        padding: 16px 12px;
+        width: 147px;
+        transform: rotate(-30deg);
      }
 }
