@@ -1,0 +1,118 @@
+/* Mulish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;1000&display=swap');
+
+*{
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #FF5400;
+    --secondary-color: #131318;
+    --paragraph-color: rgba(19, 19, 24, 0.70);
+}
+
+/* Shared styles */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section-title{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+.section-subtitle{
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+}
+.section-paragraph{
+    color: var(--paragraph-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+.btn-primary{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: normal;
+    border: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 34px;
+}
+
+/* NAV Styles */
+nav{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav .logo a{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+nav .logo a img{
+    width: 48px;
+    height: auto;
+}
+nav .logo a h1{
+    font-size: 	2.25rem;
+    font-weight: 800;
+}
+nav .logo a h1 span{
+    color: var(--primary-color);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 44px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav ul li a:hover{
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0 20px;
+    }
+    nav .logo a{
+        gap: 16px;
+    }
+    nav .logo a img{
+        width: 28px;
+    }
+    nav .logo a h1{
+        font-size: 	1.3rem;
+    }
+    nav{
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 0;
+    }
+    nav ul{
+        gap: 16px;
+    }
+    nav ul li a{
+        font-size: 0.8rem;
+    }
+}
